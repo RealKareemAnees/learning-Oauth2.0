@@ -1,4 +1,6 @@
 import { getUserName } from "@/actions/getUsername.action";
+import LogoutButton from "@/components/logout/Logout";
+import { handleLogout } from "@/lib/logout.function";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
@@ -29,6 +31,9 @@ export default async function RootLayout({
         <Link href={"/"}>home</Link>
         <br />
         <Link href={"/login"}>login</Link>
+        <br />
+        <LogoutButton />
+
         <br />
         {children}
       </body>
