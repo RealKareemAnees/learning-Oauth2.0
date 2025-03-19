@@ -4,8 +4,10 @@
     "dev": "nodemon"
   },
   "dependencies": {
+    "@types/bun": "^1.2.5",
     "@types/express": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.9",
+    "axios": "^1.8.3",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2"
   },
